@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Form</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@500&family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+<body id="form-body">
+    <form action="" method="post">
+        <fieldset id="contact-person">
+         <legend class="legend">Contact Person</legend>
+            <div class="top-input">                
+                <label for="name">Full name <strong>*</strong></label>
+                <div class="input-wrap"><input type="text" id="name" name="name" required placeholder=" " class="input-field" maxlength="100">  
+                <span id="name-hide"></span></div>       
+            </div>
+            <div class="gaps">
+                <label for="email">Email <strong>*</strong></label>
+                <div class="input-wrap"><input type="email" id="email" name="email"
+                     required placeholder=" " class="input-field" maxlength="100">
+                <span id="email-hide"></span></div>
+            </div>
+            <div class="gaps last-input">
+                <label for="tel">Tel. Number</label>
+                <div class="input-wrap"><input type="tel" id="tel" name="tel"
+                     placeholder=" " maxlength="100" pattern="[0-9, +]{0,}">
+                <span id="tel-hide"></span></div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="legend">Company Information</legend>
+            <div class="top-input">
+                <label for="company-name">Name</label>
+                <div class="input-wrap"><input type="text" id="company-name"
+                     name="company-name" maxlength="100" placeholder="Company Name">
+                <span id="company-name-hide"></span></div> 
+            </div>
+            <div class="gaps">
+                <label for="company-country">Country</label>
+                <div class="input-wrap"><input type="text" id="company-country"
+                     name="company-country" maxlength="100" placeholder="Country of operation">
+                <span id="company-country-hide"></span></div> 
+            </div>
+            <div class="gaps">
+                <label>Do you have a website? <strong>*</strong></label>
+                <div class="make-flex">               
+                <input type="radio" id="cwr1" name="company-website-radio" required>                
+                <label class="radio-choice" for="cwr1">YES</label>
+                <input type="radio" id="cwr2" name="company-website-radio">
+                <label class="radio-choice" for="cwr2">NO</label>
+                </div>
+            </div>
+            <div class="gaps last-input">
+                <label for="company-website" id="company-website-label">Website URL 
+                    <strong>*</strong></label>
+                <div class="input-wrap"><input type="text" id="company-website" 
+                    name="company-website" placeholder="http://www.website.com" class="input-field" maxlength="100">
+                <span id="company-website-hide"></span></div> 
+            </div>            
+        </fieldset>
+        <fieldset id="social-network">
+            <legend class="legend">Social Network</legend>
+            <div class="top-input">
+                <label>Facebook <strong>*</strong></label>        
+                <div class="make-flex">        
+                <input type="radio" id="f1" name="facebook" required>
+                <label class="radio-choice" for="f1">YES</label>
+                <input type="radio" id="f2" name="facebook">
+                <label class="radio-choice" for="f2">NO</label>
+                </div>
+                <div class="input-wrap"><input type="text"  id="facebook-user" 
+                    name="facebook-user" placeholder="User name" class="input-field" maxlength="100">
+                <span id="facebook-hide"></span></div> 
+            </div>
+            <div class="gaps">
+                <label>Instagram <strong>*</strong></label>  
+                <div class="make-flex">               
+                <input type="radio" id="i1" name="instagram" required>
+                <label class="radio-choice" for="i1">YES</label>
+                <input type="radio" id="i2" name="instagram">
+                <label class="radio-choice" for="i2">NO</label>
+                </div>
+                <div class="input-wrap"><input type="text"  id="instagram-user" 
+                    name="instagram-user" placeholder="User name" class="input-field" maxlength="100">
+                <span id="instagram-hide"></span></div>
+            </div>
+            <div class="gaps">
+                <label>Twitter <strong>*</strong></label>  
+                <div class="make-flex">               
+                <input type="radio" id="t1" name="twitter" required>
+                <label class="radio-choice" for="t1">YES</label>
+                <input type="radio" id="t2" name="twitter">
+                <label class="radio-choice" for="t2">NO</label>
+                </div>
+                <div class="input-wrap"><input type="text"  id="twitter-user" 
+                    name="twitter-user" placeholder="User name" class="input-field" maxlength="100">
+                <span id="twitter-hide"></span></div>
+            </div>
+            <div class="gaps">
+                <label>LinkedIn <strong>*</strong></label>   
+                <div class="make-flex">              
+                <input type="radio" id="l1" name="linkedin" required>
+                <label class="radio-choice" for="l1">YES</label>
+                <input type="radio" id="l2" name="linkedin">
+                <label class="radio-choice" for="l2">NO</label>
+                </div>
+                <div class="input-wrap"><input type="text" id="linkedin-user" 
+                    name="linkedin-user" placeholder="User name" class="input-field" maxlength="100">
+                <span id="linkedin-hide"></span></div>
+            </div>
+            <div class="gaps">
+                <label>Discord <strong>*</strong></label>     
+                <div class="make-flex">            
+                <input type="radio" id="d1" name="discord" required>
+                <label class="radio-choice" for="d1">YES</label>
+                <input type="radio" id="d2" name="discord">
+                <label class="radio-choice" for="d2">NO</label>
+                </div>
+                <div class="input-wrap"><input type="text"  id="discord-user" 
+                    name="discord-user" placeholder="User name" class="input-field" maxlength="100">
+                <span id="discord-hide"></span></div>
+            </div>
+            <div class="gaps">
+                <label>Telegram <strong>*</strong></label>     
+                <div class="make-flex">            
+                <input type="radio" id="te1" name="telegram" required>
+                <label class="radio-choice" for="te1">YES</label>
+                <input type="radio" id="te2" name="telegram">
+                <label class="radio-choice" for="te2">NO</label>
+                </div>
+                <div class="input-wrap"><input type="text"  id="telegram-user" 
+                    name="telegram-user" placeholder="User name" class="input-field" maxlength="100">
+                <span id="telegram-hide"></span></div>
+            </div>
+            <div id="social-network-additional" class="gaps"></div>
+            <div class="gaps">
+                <button type="button" id="social-network-button">Add other</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="legend">Local Directories</legend>
+            <div class="top-input">
+            <div class="input-wrap">
+            <input type="checkbox" id="google" name="google">
+            <label for="google">Google My Business</label>
+            </div>
+            </div>
+            <div class="gaps">
+            <div class="input-wrap">
+            <input type="checkbox" id="bing" name="bing">
+            <label for="bing">Bing Places</label>
+            </div>
+            </div>
+            <div class="gaps">
+            <div class="input-wrap">
+            <input type="checkbox" id="yalwa" name="yalwa">
+            <label for="yalwa">Yalwa</label>
+            </div>
+            </div>
+            <div class="gaps">
+            <div class="input-wrap">
+            <input type="checkbox" id="yelp" name="yelp">
+            <label for="yelp">Yelp</label>
+            </div>
+            </div>
+            <div class="gaps">
+            <div class="input-wrap">
+            <input type="checkbox" id="hotfrog" name="hotfrog">
+            <label for="hotfrog">Hotfrog</label>
+            </div>
+            </div>
+            <div id="local-directories-additional" class="gaps"></div>
+            <div class="gaps">
+                <button type="button" id="local-directories-button">Add other</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="legend">Additional information</legend>
+            <label class="top-input">Do you have a digital marketing plan or strategy? <strong>*</strong></label>  
+            <div class="gaps">   
+            <div class="make-flex">    
+            <input type="radio" name="marketing-plan" id="mp1" required>
+            <label class="radio-choice" for="mp1">YES</label>
+            <input type="radio" name="marketing-plan" id="mp2">
+            <label class="radio-choice" for="mp2">NO</label>   
+            </div>
+            </div>
+            <div id="additional-files" class="gaps">
+            <label for="file">Upload documentation</label>
+            <p>(You can choose multiple files by holding shift or control and then choosing)</p>
+            <input type="file" id="file" name="file" multiple> 
+            <div id="files-names"></div>
+            </div>
+            <div class="gaps">
+            <div class="gaps"><label for="additional-information">Comments</label></div>
+            <textarea maxlength="5000" name="additional-information" id="additional-information" 
+            rows="10" placeholder="Please add comments here"></textarea>
+            </div>
+        </fieldset>
+        <div id="submit-button">   
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script type="text/javascript"  src="script.js"></script>    
+</body>
+</html>
